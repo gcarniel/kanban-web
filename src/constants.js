@@ -1,4 +1,4 @@
 export const config = {
-  socketURL: 'http://localhost:4000',
-  apiURL: 'http://localhost:4000/api',
+  socketURL: 'http://192.168.1.164:4000',
+  apiURL: 'http://192.168.1.164:4000/api',
 };

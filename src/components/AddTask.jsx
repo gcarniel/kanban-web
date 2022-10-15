@@ -3,9 +3,11 @@ import { useState } from 'react';
 export const AddTask = ({ socket }) => {
   const [task, setTask] = useState('');
 
+  const user = localStorage.getItem('userId');
+
   const handleAddTodo = (e) => {
     e.preventDefault();
-    socket.emit('createTask', { task });
+    socket.emit('createTask', { task, userId: user });
     setTask('');
   };
 
